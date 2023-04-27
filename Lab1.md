@@ -1,9 +1,9 @@
 # Welcome to CS 15L! My name is Karim Barajas and I was a former student of this course. You will enjoy this course and learn more about coding by doing these labs!
 
 **Let's get started by installing VS code** 
-1) When installing the VS code follow the directions clicking on this link and make sure your installment is for the right computer like Windows or Mac: [Link](https://code.visualstudio.com/)
-2) If you have any questions about the installment ask your professor or tutor, since I already had this program installed before this course
-3) Once VS Code is set up, click on the app and you should see this:
+1)When installing the VS code follow the directions clicking on this link and make sure your installment is for the right computer like Windows or Mac: [Link](https://code.visualstudio.com/)
+2)If you have any questions about the installment ask your professor or tutor, since I already had this program installed before this course
+3)Once VS Code is set up, click on the app and you should see this:
 ![Image](VS.png)
 
 **Now let's try remotley conecting**
