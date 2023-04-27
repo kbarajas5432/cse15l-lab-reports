@@ -28,7 +28,7 @@
 - `ls -a`
 - `ls <directory>` but replace `<directory>` with `/home/linux/ieng6/cs15lsp23/cs15lsp23abc` and also replace `abc` with your group members' username
 - `cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/`
-- `cat /home/linux/ieng6/cs15lsp23/public/hello.txt
+- `cat /home/linux/ieng6/cs15lsp23/public/hello.txt`
 2) When running each code, observe what they do
 3) I tried all of them and they looked like this:
 ![Image](terminal.png)
