@@ -33,4 +33,4 @@
 3) I tried all of them and they looked like this:
 ![Image](terminal.png)
 - For reference, `ls` is a command that only lists the type of files and directories. Which is why in `lat` you were able to see a huge list, while in `a` it was just a small list.
-- Also, the word cat as used in the last line of the terminal is used to display the content of the file. Which can be seen when it ran, the output was just "Hello!" 
+- Also, the word `cat` as used in the last line of the terminal is used to display the content of the file. Which can be seen when it ran, the output was just "Hello!" 
