@@ -4,7 +4,7 @@ Here are the pictures of the code for string server:
 ![Picture](FixedCodeUseLab.png) 
 ![Picture](FixedCodeUseLab2.png)
 
-When I ran the code for the website to be created, I clicked on the given link in the terminal which showed the webisite and it looked like this:
+When I ran the code for the website to be created, I clicked on the given link in the terminal which showed the webisite and looked like this:
 ![Picture](WordWebsite.png)
 
 From there, after the dash from that searchbar, that's where I wrote `add-message?s=Hello` which this became the result:
