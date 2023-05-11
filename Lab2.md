@@ -1,5 +1,5 @@
 **Lab Report 2- Servers and Bugs**
-Part 1-
+**Part 1-**
 Here are the pictures of the code for string server:
 ![Picture](FixedCodeUseLab.png) 
 ![Picture](FixedCodeUseLab2.png)
@@ -20,7 +20,7 @@ As I said earlier about whatever you added being stored in the same variable, is
 This is bascially the same thing that happened for hello, but for this string, there are spaces. Even though the message has spaces, this is still considered to be one string and just note that it doesn't matter if your string contains spaces.
 Also, note that after reaching that return statement, you will see that the website still has your earlier string string in the first line and the second line is your new string. This is because whatever you had stored in the variable is still saved due to that return statement. Note that `return` will never delete or remove anthing from your code.
 
-Part 2-
+**Part 2-**
 The code that I will be running is `static void reverseInPlace(int[] arr)` and here is how it looks before any changes:
 ![Picture](Beforechange.png)
 
@@ -35,7 +35,7 @@ Not a failing inducing input-
 `public void testReverseInPlace() {`
     `int[] input3 = {};`
     `ArrayExamples.reverseInPlace(input3);`
-    `assertArrayEquals(new int[]{ 2,4,6 }, input3);`
+    `assertArrayEquals(new int[]{}, input3);`
 	`}`
   
   Symptom of the failing inducing input:
@@ -45,4 +45,20 @@ Not a failing inducing input-
   ![Picture](NotFailCode.png)
   
   Before bug fix:
+  `static void reverseInPlace(int[] arr) {`
+    `for(int i = 0; i < arr.length; i += 1) {`
+      `arr[i] = arr[arr.length - i - 1];`  
+    `}`
+  `}`
+  
+  After bug fix:
+  `static void reverseInPlace(int[] arr) {`
+    `int element;`
+    `for(int i = 0; i < arr.length/2; i += 1) {`
+      `element = arr[i];`
+      `arr[i] = arr[arr.length - i - 1];`  
+      `arr[arr.length - i - 1] = element;`
+    `}`
+  `}`
+Yes I know the first and third line of the before fix part didn't get any changes in the after part, but I decided to include it to show off the whole code. Anyways, the edits I made did fix the bug because I noticed that when I ran the code, I saw that elements 3 and 4 (-1 and 0) did not swap. The other elements did swap places, but once it reached to the middle of the list, nothing got swapped. I figured that in the for loop that in order for the reverse to happen you have to divide `arr.length` by 2. This is because you want to swap the first half of the list with the last half. Not only that, but it wouldn't make sense to go through an entire list. At first I thought that I was done but I was still keep getting an error, which is when I rembered from a CS class that if you were going to reverse a list, you have to store an index to a variable. Let's just say you want to swap index 0, in the code of line 4 of bug fix, your `i` will be 0 because that is the index you want to swap. In the next line you are subtracting the length of your list by your index and also subtracting by 1. In my example of the fail input, the length of my list is 6. So, the 6 is subtracted by 0 and 1 which makes it 5. 5 is considered an index because it is inside a bracket and arr is outside. `arr[i]` is now equal to 5, which means that the element in index 5 will now be moved to index 0. This can be seen why positive 5 is at index 0 in my example. For that 
   `
