@@ -39,20 +39,20 @@ The code that I will be running and fixing for this part is `static void reverse
 4.    `assertArrayEquals(new int[]{}, input3);`
 5.	`}`
   
-  ## Symptom of the failing inducing input:
+## Symptom of the failing inducing input:
   ![Picture](2FailCode.png)
   
-  ## Sympptom of the not failing inducing input-
+## Sympptom of the not failing inducing input-
   ![Picture](NotFailCode.png)
   
-  ## Before bug fix:
+## Before bug fix:
 1.  `static void reverseInPlace(int[] arr) {`
 2.    `for(int i = 0; i < arr.length; i += 1) {`
 3.      `arr[i] = arr[arr.length - i - 1];`  
 4.    `}`
 5.  `}`
   
-  ## After bug fix:
+## After bug fix:
 1.  `static void reverseInPlace(int[] arr) {`
 2.    `int element;`
 3.    `for(int i = 0; i < arr.length/2; i += 1) {`
