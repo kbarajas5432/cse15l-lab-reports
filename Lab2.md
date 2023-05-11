@@ -42,7 +42,7 @@ The code that I will be running and fixing for this part is `static void reverse
 ## Symptom of the failing inducing input:
   ![Picture](2FailCode.png)
   
-## Sympptom of the not failing inducing input-
+## Symptom of the not failing inducing input-
   ![Picture](NotFailCode.png)
   
 ## Before bug fix:
