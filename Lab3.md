@@ -1,7 +1,7 @@
 # Lab 3- Command Research
 
 There were so many commands for bash that I learned in this course and discovered what they do in lab. The one command that I am researching for this report is the `less` command.
-Since I found this command interesting, I decided to go on [Link](https://phoenixnap.com/kb/less-command-in-linux) to look at four interesting common line options or another way of writing `less`.
+Since I found this command interesting, I decided to go on [Link](https://phoenixnap.com/kb/less-command-in-linux) to look at four interesting common line options of `less`.
 ## When looking up ways on writing the less command, I saw that one of the ways was `-N`
 - When using that code for one of the files, I wrote it as, `less -N Server.java`. Writing the code, gave me this output: `
 1. `1 // A simple web server using Java's built-in HttpServer`
@@ -77,21 +77,21 @@ Since I found this command interesting, I decided to go on [Link](https://phoeni
 1. `// A simple web server using Java's built-in HttpServer`
 2. ``
 3. `// Examples from https://dzone.com/articles/simple-http-server-in-java were useful references`
-4.``
+4. ``
 5. `import java.io.IOException;`
 6. `import java.io.OutputStream;`
 7. `import java.net.InetSocketAddress;`
 8. `import java.net.InetAddress;`
 9. `import java.net.URI;`
-10.``
+10. ``
 11. `import com.sun.net.httpserver.HttpExchange;`
 12. `import com.sun.net.httpserver.HttpHandler;`
 13. `import com.sun.net.httpserver.HttpServer;`
-14.``
+14. ``
 15. `interface URLHandler {`
 16.    `String handleRequest(URI url) throws IOException;`
 17. `}`
-18.
+18. ``
 19. `class ServerHttpHandler implements HttpHandler {`
 20.    `URLHandler handler;`
 21.    `ServerHttpHandler(URLHandler handler) {`
@@ -100,22 +100,23 @@ Since I found this command interesting, I decided to go on [Link](https://phoeni
 
 - For the directories part, I just wrote `less -E technical/911report/chapter-1.txt` which I got this output:
 1. `"WE HAVE SOME PLANES"`
-2.
+2. ``
 3.    `Tuesday, September 11, 2001, dawned temperate and nearly cloudless in the eastern United States. Millions of men and women readied themselves for work. Some made their way to the Twin Towers, the signature structures of the World Trade Center complex in New York City. Others went to Arlington, Virginia, to the Pentagon. Across the Potomac River, the United States Congress was back in session. At the other end of Pennsylvania Avenue, people began to line up for a White House tour. In Sarasota, Florida, President George W. Bush went for an early morning run.`
-4.
+4. ``
 5.    `For those heading to an airport, weather conditions could not have been better for a safe and pleasant journey. Among the travelers were Mohamed Atta and Abdul Aziz al Omari, who arrived at the airport in Portland, Maine.`
-6.
+6. ``
 7. `INSIDE THE FOUR FLIGHTS`
-8.
+8. ``
 9. `Boarding the Flights`
-10.
+10. ``
 11.    `Boston: American 11 and United 175. Atta and Omari boarded a 6:00 A.M. flight from Portland to Boston's Logan International Airport.`
-12.
+12. ``
 13.    `When he checked in for his flight to Boston, Atta was selected by a computerized prescreening system known as CAPPS (Computer Assisted Passenger Prescreening System), created to identify passengers who should be subject to special security measures. Under security rules in place at the time, the only consequence of Atta's selection by CAPPS was that his checked bags were held off the plane until it was confirmed that he had boarded the aircraft. This did not hinder Atta's plans.`
 
 - At first, the two different outputs may look like nothing happened, but something did happened. By pressing the space bar, clicking enter, or using the down arrow to scroll through the whole output you will notice that once you reached the end of the output, the file immdeatly ends and you are back to your bash terminal. From there, you see that you did't type `q` to exit the file when you reached the end. What I mean is that if you ran the less command without the `-E` option, you will see the `(End)` message at the end of your file. Even though it says end, you can't exit the file without typing `q`. Unlike `-E`, there's no need to type `q` and also there was no `(End)` at the end of the file. The `(End)` is replaced with `:`.
 - Based on what I said earlier and according to that same website [Link](https://phoenixnap.com/kb/less-command-in-linux), the `-E` option just "automatically exits upon reaching the end of file." I believe the importence of this option is to save the hassle and time for a coder to just quickly end the file when he or she reaches to the end without typing `q`.
-
+- I had to include the backticks for the blank spaces because when I go to my website, something wierd happens to the numbers since there are parts of the list that are blank. I had to leave them blank because I copied my output from the terminal and that's how it looked when I pasted it here. This reasoning will be the same for the other examples of the `less` options.
+ of the output that will have blank spaces in the list.
 ## The third option that I just learned from the same website is `-p[pattern]`. 
 - For files, I worte this option as `less -p[pattern] TestDocSearch.java` and here is the output:
 
@@ -124,9 +125,9 @@ Since I found this command interesting, I decided to go on [Link](https://phoeni
 3. `import java.net.URI;`
 4. `import java.net.URISyntaxException;`
 5. `import java.io.IOException;`
-6.
+6. ``
 7. `public class TestDocSearch {`
-8.        @Test`
+8.        `@Test`
 9.        `public void testIndex() throws URISyntaxException, IOException {`
 10.    `Handler h = new Handler("./technical/");`
 11.    `URI rootPath = new URI("http://localhost/");`
@@ -184,7 +185,7 @@ For directories, `-p[pattern]` is written as `less -p[pattern] technical/biomed/
 9. `import java.util.ArrayList;`
 10. `import java.util.List;`
 11. `import java.util.Collections;`
-12. 
+12. ``
 13. `class FileHelpers {`
 14.    `static List<File> getFiles(Path start) throws IOException {`
 15.        `File f = start.toFile();`
@@ -193,17 +194,17 @@ For directories, `-p[pattern]` is written as `less -p[pattern] technical/biomed/
 18.            `File[] paths = f.listFiles();`
 19.            `for(File subFile: paths) {`
 20.                `result.addAll(getFiles(subFile.toPath()));`
-21.            }
-22.        }
-23.        else {
-24.            result.add(start.toFile());
-25.        }
-26.        return result;
-27.    }
-28.    static String readFile(File f) throws IOException {
-29.        return new String(Files.readAllBytes(f.toPath()));
-30.    }
-31. }
+21.            `}`
+22.        `}`
+23.        `else {`
+24.            `result.add(start.toFile());`
+25.        `}`
+26.        `return result;`
+27.    `}`
+28.    `static String readFile(File f) throws IOException {`
+29.        `return new String(Files.readAllBytes(f.toPath()));`
+30.    `}`
+31. `}`
 
 - In directories, the option is written as `less -X technical/government/media/Barnes_Volunteers.txt` and this is the output from the terminal:
 1. `Barnes Volunteers as Lawyer to Poor`
