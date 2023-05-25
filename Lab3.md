@@ -1,9 +1,9 @@
 # Lab 3- Command Research
 
 There were so many commands for bash that I learned in this course and discovered what they do in lab. The one command that I am researching for this report is the `less` command.
-Since I found this command interesting, I decided to go on [Link](https://phoenixnap.com/kb/less-command-in-linux) to look at four interesting comman line options or another way of writing `less`.
+Since I found this command interesting, I decided to go on [Link](https://phoenixnap.com/kb/less-command-in-linux) to look at four interesting common line options or another way of writing `less`.
 ## When looking up ways on writing the less command, I saw that one of the ways was `-N`
-- When using that code in files, I wrote it as, `less -N Server.java`. Writing the code this way, gave me this output: `
+- When using that code for one of the files, I wrote it as, `less -N Server.java`. Writing the code, gave me this output: `
 1. `1 // A simple web server using Java's built-in HttpServer`
 2.      `2`
 3.      `3 // Examples from https://dzone.com/articles/simple-http-server-in-java were useful references`
@@ -67,26 +67,27 @@ Since I found this command interesting, I decided to go on [Link](https://phoeni
 36.     `28 ted 175 passed was controlled by United Airlines, which had contracted with Huntleigh USA to perform the screening.`
 
 - The `-N` option for less, basically "shows the line numbers at the beginning of each new line" as mentioned from the website [Link](https://phoenixnap.com/kb/less-command-in-linux). I think the importance for the command is to make the count easier when reading from the bash terminal. What I mean easier is that if you were to write less without that command, you will see the lines with the text but there will be no numbers shown at the begining.
-- Just note that for files, there are actually 55 lines, while directory has 731 lines. I decided to not include the whole output for both because I didn't want to write too much for the output in my report.
-- Also, you will see that there are some numbers that repeat and it's because the text was too big to fit in one line of a terminal, so they just indent for a new line but with the same number. That number will just show that the test belongs with that line number. Not only that, but you will some numbers have blank spaces and this is more likely that it's going to happen for my other outputs. You may also see that some of the code isn't line up porperly, which it was lined up how the output is supposed to look in bash. These two problems that I just pointed happened because I copied the output from my terminal.
+- Just note that for files, there are actually 55 lines, while directory has 731 lines. I decided to not include the whole output for both because I didn't want to write too much for the output in my report. My reasoning for not including the whole output for each example will remain the same.
+- Also, you will see that there are some numbers that repeat and it's because the text might have been too big to fit in one line of a terminal, so they just indent for a new line but with the same number. That number will just show that the text belongs with that line number. Not only that, but you will some numbers have blank spaces and this is more likely that it's going to happen for my other outputs. You may also see that some of the code isn't lined up porperly, which the output was lined up how it's supposed to look in the bash terminal. These two problems that I just pointed happened because I copied the output from my terminal and pasted them here.
+- Just for those two examples only, the list has to be in roman numbers so that you won't get confused with the numbers that are already inside of the list.
 
 ## After doing the `-N`, I used that website to look for more options which that is when I discovered an option named `-E`. 
 - For the files part, I wrote it as `less -E Server.java` which I got this output:
 
 1. `// A simple web server using Java's built-in HttpServer`
-2.
+2. ``
 3. `// Examples from https://dzone.com/articles/simple-http-server-in-java were useful references`
-4.
+4.``
 5. `import java.io.IOException;`
 6. `import java.io.OutputStream;`
 7. `import java.net.InetSocketAddress;`
 8. `import java.net.InetAddress;`
 9. `import java.net.URI;`
-10.
+10.``
 11. `import com.sun.net.httpserver.HttpExchange;`
 12. `import com.sun.net.httpserver.HttpHandler;`
 13. `import com.sun.net.httpserver.HttpServer;`
-14.
+14.``
 15. `interface URLHandler {`
 16.    `String handleRequest(URI url) throws IOException;`
 17. `}`
