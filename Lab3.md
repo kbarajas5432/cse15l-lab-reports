@@ -1,7 +1,7 @@
 # Lab 3- Command Research
 
 There were so many commands for bash that I learned in this course and discovered what they do in lab. The one command that I am researching for this report is the `less` command.
-Since I found this command interesting, I decided to go on [Link](https://phoenixnap.com/kb/less-command-in-linux) to look at four interesting common line options of `less`.
+Since I found this command interesting, I decided to go on phoenixnap.com [Link](https://phoenixnap.com/kb/less-command-in-linux) to look at four interesting common line options of `less`.
 ## When looking up ways on writing the less command, I saw that one of the ways was `-N`
 - When using that code for one of the files, I wrote it as, `less -N Server.java`. Writing the code, gave me this output: `
 1. `1 // A simple web server using Java's built-in HttpServer`
