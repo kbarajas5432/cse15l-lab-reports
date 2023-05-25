@@ -99,6 +99,7 @@ Since I found this command interesting, I decided to go on phoenixnap.com [Link]
 23.   `}`
 
 - For the directories part, I just wrote `less -E technical/911report/chapter-1.txt` which I got this output:
+
 1. `"WE HAVE SOME PLANES"`
 2. ``
 3.    `Tuesday, September 11, 2001, dawned temperate and nearly cloudless in the eastern United States. Millions of men and women readied themselves for work. Some made their way to the Twin Towers, the signature structures of the World Trade Center complex in New York City. Others went to Arlington, Virginia, to the Pentagon. Across the Potomac River, the United States Congress was back in session. At the other end of Pennsylvania Avenue, people began to line up for a White House tour. In Sarasota, Florida, President George W. Bush went for an early morning run.`
@@ -174,6 +175,7 @@ For directories, `-p[pattern]` is written as `less -p[pattern] technical/biomed/
 
 ## The final option that I selected from the website is, '-X'. 
 - In files, this option was written as `less -X DocSearchServer.java` and this is the output I got from running that command with that option:
+
 1. `import java.io.File;`
 2. `import java.io.IOException;`
 3. `import java.net.URI;`
@@ -207,6 +209,7 @@ For directories, `-p[pattern]` is written as `less -p[pattern] technical/biomed/
 31. `}`
 
 - In directories, the option is written as `less -X technical/government/media/Barnes_Volunteers.txt` and this is the output from the terminal:
+
 1. `Barnes Volunteers as Lawyer to Poor`
 2. `Wednesday, December 18, 2002`
 3. `Defeated last month for re-election, Gov. Roy Barnes announced`
