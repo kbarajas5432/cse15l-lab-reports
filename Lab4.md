@@ -1,5 +1,5 @@
 # Lab Report 4
-FOr this report, I will reproduce steps 4-9 of the week 7 lab, which in this case will be numbered 1-6.
+For this report, I will reproduce steps 4-9 of the week 7 lab, which in this case will be numbered 1-6.
 
 1. Logging in to ieng6:
 ![Image](Wholelog.png)
@@ -15,7 +15,7 @@ FOr this report, I will reproduce steps 4-9 of the week 7 lab, which in this cas
   - This just basically clones the link to your cs15l account. By cloning this, you can do the commands that are being asked for the lab.
  
  3. Run the tests, demonstrating that they fail:
- ![Image](Testfail.png)
+ ![Image](Testfail2.png)
  - Hovere mouse to that flask icon or hover 5 spaces down from the Explorer icon which is at the left side bar. the iconplay button that is next to t
  
  4. Edit 
