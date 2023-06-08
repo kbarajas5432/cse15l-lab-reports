@@ -31,5 +31,5 @@ For this report, I will reproduce steps 4-9 of the week 7 lab, which in this cas
  ![Image](Workingtest2.png)
  
  6. Commit
- - 
+ - Keys pressed:
  Look at podcast for reference May 17
