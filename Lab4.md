@@ -21,15 +21,15 @@ For this report, I will reproduce steps 4-9 of the week 7 lab, which in this cas
  
  4. Edit 
  - Keys pressed: `vim`, `<sapce>`, `ListExamples.java`, `<eneter>`. When entering vim, I did `<up><up><up><up><up><up>` then `<left><left><left><left><left><left>`. Lastly I just typed `x`, `i` and wrote in 2. After doing all the editing for vim, I just clicked `<esc>` and then typed `:wq`.
- - hfukf
+ - When I got into vim, I figured to scroll through file I had to use the arrows and I remeber that x means to delete a character. Once deleted, I typed i to get into the mode to write something. When I finised, I had to type esc to get into normal and then I `:wq` in order to save and exit my work.
  ![Image](Vimshow.png)
  ![Image](Indexfix2.png)
  
  5. Pass test
  - Keys pressed: For this part, all I did was `bash test.sh`, `<enter>`
- - nkjbnlb
+ - Basically, this just runs the tests again and it showed that all of my tests passed.
  ![Image](Workingtest2.png)
  
- 6. Commit
- - Keys pressed:
- Look at podcast for reference May 17
+ 6. Commit 
+ - Keys pressed: `git init`, `<enter>` in then I typed `git status`, `<enter>`. After seeing `git status`, I typed `git add ListExamples.java`, `<enter>` and I typed `git status`, `<enter>` again.
+ - I'm so sorry but I ran out of time here. The commit worked fine, but for some reason it didn't want to push.
