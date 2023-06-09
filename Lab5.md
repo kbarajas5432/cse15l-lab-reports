@@ -17,7 +17,7 @@ I decided to show all the images just in case if they're important, but I know t
 - The way you wrote your test in the terminal is fine, but just note that there is another way to write your test quicker instead of writing those three lines as in your first image. Think from past labs or in class on why we used `bash test.sh`.
 - Probably you already did this, but based on your pictures we are askinng you to do your edits in vim.
 - If you want as a last resort, you can try to find something simialr to what you did in 8B and just compare that code with what you wrote, but I belive that my earlier advice is better for this lab.
-3.Screeshot and explanation of working terminal:study.com
+3. Screeshot and explanation of working terminal:study.com
 ![Image](Labreport5vimfix.png)
 ![Image](Passmethod.png)
 
