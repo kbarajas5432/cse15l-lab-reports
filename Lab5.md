@@ -21,7 +21,7 @@ I decided to show all the images just in case if they're important, but I know t
 ![Image](Labreport5vimfix.png)
 ![Image](Passmethod.png)
 
-Based on the avice I received, I figured that bug occured in line 23 in that second image since there was no need to add anything inside the bracket, since this method is only asking for the even indexes. If I would've kept the plus 1, the method would be adding the odd indexes instead of the evens. In that for loop condition, we start i as 0, which is one of the elements that would be added. In that same condtion, i gets added by 2. By just keeping i as is, the element in index 2 will be added, which this is an even number. If plus one was there, the index would be 3 and this is not an even number.
+Based on the advice I received, I figured that bug occured in line 23 in that second image since there was no need to add anything inside the bracket, since this method is only asking for the even indexes. If I would've kept the plus 1, the method would be adding the odd indexes instead of the evens. In that for loop condition, we start i as 0, which is one of the elements that would be added. In that same condtion, i gets added by 2. By just keeping i as is, the element in index 2 will be added, which this is an even number. If plus one was there, the index would be 3 and this is not an even number.
 
 4. Setup information:
 - All of the files and the directory structure needed is shown in my first picture, but the ones that I had to use for this lab report only is:
@@ -30,6 +30,8 @@ Based on the avice I received, I figured that bug occured in line 23 in that sec
   -    `junit-4.13.2.jar`
   -   `LectureExamples.java`
   -   `MethodsTests.java`
-
+- I already showed the images of the files before I fixed the bug earlier.
+- The commands that I ran which triggered the bug was, `CPATH=".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar"`, `javac -cp $CPATH MethodsTests.java `, `java -cp $CPATH org.junit.runner.JUnitCore MethodsTests`. All of these commands that triggered the bug are listed in a script called `debugging.sh`. Basically all these methods compile the tests that are run by the specific method from `LectureExamples.java`. 
+- As I mentioned in number three, the bugg was that I wasn't supposed to add anything inside of the bracket since I am only adding the elements from the even indexes and not the odds. I also do not want to skip any elements from a different number if I kept that plus sign. I already showed the image of the passed test and also the fixed bug earlier.
 ## Part 2- Reflection
-One of the best things that I learned from this course was vim.
+One of the best things that I learned from this course was vim in week 7. Learning about vim was interesting because I never realized that there so many options to do with this text editior. At first, it was annoying getting used to vim in lab 7, since this program worked differently than what we were used to seeing in bash or powershell. I mean for starters, you have to type `i` in vim in order to write something in the terminal. Also, if you want to delete a character, you have to press `x` in vim. Another important thing about vim is that if you want to exit this program, you have to press `esc` in order to get into normal and just type `:q`. Bur if you wrote something in vim and want to save it, you have to type, `:wq` or if you don't want any of the changes save then just type `:q`. To scroll through a large file in vim, you have to use the arrows. Youn could use the 4 letters for vim, but I personally prefer the arrows. It was hard getting used to vim for that lab, but then I got the hang of it as weeks went by.
